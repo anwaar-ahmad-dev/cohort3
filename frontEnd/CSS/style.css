@@ -1,0 +1,44 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+li {
+  border-bottom: 1px solid black;
+}
+li:first-child {
+  font-weight: 900;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:nth-child(2) {
+  color: rgb(0, 51, 255);
+}
+li:nth-child(odd) {
+  background: #1fba11;
+}
+
+li:nth-child(even) {
+  background: #ba1111;
+}
+
+h1::after {
+  content: '→';
+}
+
+p::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+} */
