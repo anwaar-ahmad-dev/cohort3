@@ -145,3 +145,28 @@ body {
 .ri-menu-fill {
   font-size: 50px;
 }
+
+@media (max-width: 768px) {
+  .main {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+    padding: 30px;
+    text-align: center;
+  }
+
+  body::before {
+    content: '🖥️\A This website is optimized for desktop viewing.\A Please open it on a Desktop or Laptop.';
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.6;
+  }
+}
