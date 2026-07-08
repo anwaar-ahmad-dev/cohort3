@@ -42,3 +42,47 @@ p::first-letter {
   float: left;
   margin-right: 4px;
 } */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'top-left top-center right'
+    'bottom-left bottom-left right';
+  gap: 5px;
+}
+
+.top-left {
+  background-color: aqua;
+  grid-area: top-left;
+}
+
+.top-center {
+  background-color: crimson;
+  grid-area: top-center;
+}
+.right {
+  background-color: beige;
+  grid-area: right;
+}
+
+.bottom-left {
+  background-color: palevioletred;
+  grid-area: bottom-left;
+} */
