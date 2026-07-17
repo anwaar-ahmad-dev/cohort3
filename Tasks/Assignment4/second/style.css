@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 10px 180px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 24fr 20fr 6fr 27fr 23fr;
+  grid-template-rows: 30fr 25fr 5fr 18fr 22fr;
+
+  grid-template-areas:
+    'left-top top-center1 top-center1 top-center2 right-top'
+    'left-top center center center right-top'
+    'left-bottom center center center right-top'
+    'left-bottom center center center right-bottom'
+    'left-bottom bottom-center1 bottom-center2 bottom-center2 right-bottom';
+  gap: 8px;
+}
+
+.left-top {
+  background-color: #fce5e6;
+  grid-area: left-top;
+  border-radius: 25px;
+}
+.left-bottom {
+  background-color: #1e1e1e;
+  grid-area: left-bottom;
+  border-radius: 25px;
+}
+
+.right-top {
+  background-color: #fcf8f9;
+  grid-area: right-top;
+  border-radius: 25px;
+}
+
+.right-bottom {
+  background-color: #fcf8f9;
+  grid-area: right-bottom;
+  border-radius: 25px;
+}
+
+.center {
+  background-color: #eed2d4;
+  grid-area: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  clip-path: inset(-100vw -100vw 0 -100vw);
+}
+
+.circle {
+  height: 100%;
+  width: 58%;
+  border-radius: 50%;
+  background: radial-gradient(rgb(227, 172, 182), rgba(241, 184, 193, 0.48));
+}
+.center > img {
+  height: 400px;
+  position: absolute;
+  bottom: -30px;
+}
+
+.center-box1 {
+  height: 90px;
+  width: 120px;
+  background-color: #fefefe;
+  border-radius: 15px;
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  padding: 10px;
+}
+
+.center-box1 .part1 {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-box1 .part1 p {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.center-box1 .part1 i {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.center-box1 .part2 {
+  height: 70%;
+}
+
+.center-box1 .part2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.center-box2 {
+  height: 110px;
+  width: 150px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 5px 15px;
+}
+
+.center-box2 .part1 {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-box2 .part1 p {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.center-box2 .part1 i {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.center-box2 .part2 {
+  height: 70%;
+}
+
+.center-box2 .part2 img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.center-box3 {
+  height: 50px;
+  width: 130px;
+  background-color: #fefefe;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.center-box3 .part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #fb6074;
+}
+
+.center-box3 .part1 i {
+  font-size: 20px;
+  color: white;
+}
+
+.center-box3 .part2 p:first-child {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.center-box3 .part2 p:last-child {
+  font-size: 7px;
+}
+
+.center-box4 {
+  height: 120px;
+  width: 120px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  z-index: 1;
+}
+
+.top-center1 {
+  background-color: #fbf6f8;
+  grid-area: top-center1;
+  border-radius: 25px;
+}
+.top-center2 {
+  background-color: #fbf6f8;
+  grid-area: top-center2;
+  border-radius: 25px;
+}
+
+.bottom-center1 {
+  background-color: #fcf8f9;
+  grid-area: bottom-center1;
+  border-radius: 25px;
+}
+
+.bottom-center2 {
+  background-color: #fcf8f9;
+  grid-area: bottom-center2;
+  border-radius: 25px;
+}
